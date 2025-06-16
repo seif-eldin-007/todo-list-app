@@ -22,6 +22,6 @@ const TodoSchema = new mongoose.Schema(
   }
 );
 
-const Todo = mongoose.model("Todo", TodoSchema);
+const Todo = mongoose.models.Todo || mongoose.model("Todo", TodoSchema);
 
 export default Todo;
