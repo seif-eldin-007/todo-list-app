@@ -99,7 +99,7 @@ export async function PATCH_Todo(req) {
     return Response.json(
       {
         success: true,
-        message: "Todo with updated successfully",
+        message: "Todo updated successfully",
         data: todo,
       },
       { status: 200 }
